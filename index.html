@@ -616,7 +616,7 @@ function showFixturePicker(team,fixtures){
       +'<span class="fx-venue">'+tstr+(fx.fixture.venue?.name?' · '+esc(fx.fixture.venue.name):'')+'</span>'
       +'</div>'
       +'<div class="fx-side">'
-      +(fx.teams.away.logo?'<img class="fx-tlogo" src="'+fx.teams.away.logo+'" onerror="this.outerHTML=\'<div class=fx-tph>⚽</div>\'">'
+      +(fx.teams.away.logo?'<img class="fx-tlogo" src="'+fx.teams.away.logo+'" onerror=""this.style.display='none'"
                           :'<div class="fx-tph">⚽</div>')
       +'<div class="fx-tname'+(fx.teams.away.id===team.id?' subject':'')+'">'+esc(fx.teams.away.name)+'</div>'
       +'</div>'
