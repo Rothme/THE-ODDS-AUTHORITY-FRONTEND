@@ -606,7 +606,7 @@ function showFixturePicker(team,fixtures){
       +'</div>'
       +'<div class="fx-matchup" style="cursor:pointer">'
       +'<div class="fx-side">'
-      +(fx.teams.home.logo?'<img class="fx-tlogo" src="'+fx.teams.home.logo+'" onerror="this.outerHTML=\'<div class=fx-tph>⚽</div>\'">'
+      +(fx.teams.home.logo?'<img class="fx-tlogo" src="'+fx.teams.home.logo+'" onerror=""this.style.display='none'"
                           :'<div class="fx-tph">⚽</div>')
       +'<div class="fx-tname'+(fx.teams.home.id===team.id?' subject':'')+'">'+esc(fx.teams.home.name)+'</div>'
       +'</div>'
