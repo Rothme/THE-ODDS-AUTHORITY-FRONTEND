@@ -562,7 +562,7 @@ async function loadTeam(team){
 
 // ── FIXTURE PICKER ─────────────────────────────────────────
 function showFixturePicker(team,fixtures){
-  var tl=team.logo?'<img class="ts-logo" src="'+team.logo+'" onerror="this.outerHTML=\'<div class=ts-ph>⚽</div>\'">'
+  var tl=team.logo?'<img class="ts-logo" src="'+team.logo+'" onerror="this.style.display='none'"
                    :'<div class="ts-ph">⚽</div>';
   var html='<div class="team-strip">'+tl
     +'<div style="flex:1;min-width:0">'
