@@ -394,7 +394,7 @@ var SEASON = (new Date().getMonth() >= 6) ? new Date().getFullYear() : new Date(
   var chip=document.getElementById('chip'), lbl=document.getElementById('chipLbl');
   try {
     var ctrl=new AbortController();
-    var timer=setTimeout(function(){ctrl.abort();},12000);
+    var timer=setTimeout(function(){ctrl.abort();},60000);
     var r=await fetch(API+'/health',{signal:ctrl.signal});
     clearTimeout(timer);
     var d=await r.json();
